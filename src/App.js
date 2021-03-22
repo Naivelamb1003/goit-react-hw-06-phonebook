@@ -14,59 +14,7 @@ class App extends Component {
     showAlert: false,
   };
 
-  // isContactExist = (value) => {
-  //   const element = this.state.contacts.find(
-  //     (contact) => contact.name === value
-  //   );
-  //   return element !== undefined;
-  // };
-
-
-  // addHandler = (contactFormState) => {
-  //   console.log(contactFormState.name.length);
-  //   if (
-  //     this.isContactExist(contactFormState.name) ||
-  //     contactFormState.name.length === 0
-  //   ) {
-  //     this.setState({ message: `${contactFormState.name} is already in contacts.`, showAlert: true })
-  //     setTimeout(() => {
-  //       this.setState({ showAlert: false });
-  //     }, 1000);
-  //     return
-  //         } else {
-  //     this.setState((prevState) => {
-  //       return {
-  //         contacts: prevState.contacts.concat({
-  //           name: contactFormState.name,
-  //           number: contactFormState.number,
-  //           id: uuidv4(),
-  //         }),
-  //       };
-  //     });
-  //   }
-  // };
-
-  // handleChange = (event) => {
-  //   this.setState({
-  //     filter: event.currentTarget.value,
-  //   });
-  // };
-
-
-  // componentDidMount() {
-  //   const contactFromStorage = localStorage.getItem("contact");
-  //   const parseContact = JSON.parse(contactFromStorage);
-
-  //   if (parseContact) {
-  //     this.setState({ contacts: parseContact });
-  //   }
-  // }
-
-  // componentDidUpdate(prevProps, prevState) {
-  //   if (this.state.contacts !== prevState.contacts)
-  //     localStorage.setItem("contact", JSON.stringify(this.state.contacts));
-  // }
-
+ 
   render() {
     return (
       <>
