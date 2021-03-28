@@ -1,3 +1,4 @@
+/* eslint import/no-anonymous-default-export: [2, {"allowObject": true}] */
 import { configureStore, combineReducers } from '@reduxjs/toolkit'
 import phonebookReducer from './phonebook/phonebook-reducer';
 import { persistStore, persistReducer } from 'redux-persist'
