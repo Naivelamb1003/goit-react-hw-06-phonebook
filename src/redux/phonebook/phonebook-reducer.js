@@ -4,7 +4,7 @@ import actions from './phonebook-actions'
 
 const contacts = createReducer([], {
     [actions.addContact]: (state, {payload}) => [...state, payload],
-    [actions.deleteContact]: (state, {payload}) => state.filter(el => el.id != payload),
+    [actions.deleteContact]: (state, {payload}) => state.filter(el => el.id !== payload),
 })
 
 const filter = createReducer('', {

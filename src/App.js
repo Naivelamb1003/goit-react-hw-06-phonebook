@@ -1,12 +1,10 @@
 import { Component } from "react";
 import style from "./App.module.css";
-import { v4 as uuidv4 } from "uuid";
 import ContactForm from "./components/ContactForm/ContactForm";
 import ContactList from "./components/ContactList/ContactList";
 import Filter from "./components/Filter/Filter";
 import { CSSTransition } from "react-transition-group";
 import Alert from './components/Alert/Alert';
-import phonebookActions from '../src/redux/phonebook/phonebook-actions';
 
 class App extends Component {
   state = {
