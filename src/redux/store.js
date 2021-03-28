@@ -1,7 +1,7 @@
 
 import { configureStore, combineReducers } from '@reduxjs/toolkit'
 import phonebookReducer from './phonebook/phonebook-reducer';
-import { persistStore,persistReducer } from 'redux-persist'
+import { persistStore, persistReducer } from 'redux-persist'
 import storage from 'redux-persist/lib/storage'
 
 const persistConfig = {

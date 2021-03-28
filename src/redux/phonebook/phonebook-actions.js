@@ -35,10 +35,4 @@ const changeFilter = createAction('todos/change_filter');
 //     payload: value
 // })
 
-const loadFromStorage = createAction('todos/load_storage');
-
-// const loadFromStorage = (contacts) => ({
-//     type: types.LOAD_STORAGE,
-//     payload: contacts
-// })
-export default {addContact, deleteContact, changeFilter, loadFromStorage};
+export default {addContact, deleteContact, changeFilter};

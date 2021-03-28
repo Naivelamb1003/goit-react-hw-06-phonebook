@@ -3,13 +3,12 @@ import {createReducer} from '@reduxjs/toolkit';
 import actions from './phonebook-actions'
 
 const contacts = createReducer([], {
-    [actions.addContact]: (state, {payload}) => [...state,actions.payload],
+    [actions.addContact]: (state, {payload}) => [...state, payload],
     [actions.deleteContact]: (state, {payload}) => state.filter(el => el.id != payload),
-    [actions.loadFromStorage]: (state, {payload}) => [...payload],
 })
 
-const filter = createReducer([], {
-    [actions.changeFilter]: (state, {payload}) => [payload],
+const filter = createReducer('', {
+    [actions.changeFilter]: (_, {payload}) => payload,
     
 })
 
